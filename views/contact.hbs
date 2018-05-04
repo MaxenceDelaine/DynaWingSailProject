@@ -1,0 +1,55 @@
+<section class="container-contact">
+  <div class="container-fluid contact-content header-bg">
+    <div class="row row-contact">
+      <div class="col-md-12 helper-box">
+        <div class="text-box">
+          <h2>CONTACT</h2>
+        </div>
+      </div>
+    </div>
+    <form id="contactForm">
+      <div class="row justify-content-center row-contact">
+        <div class="col-md-5 form-group">
+          <label for="firstNameInput">{{name}}<span class="red">*</span></label>
+          <input type="text" class="form-control" name="firstNameInput" placeholder="{{placeholderName}}" required>
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="col-md-5 form-group">
+          <label for="lastNameInput">{{surname}}<span class="red">*</span></label>
+          <input type="text" class="form-control" name="lastNameInput" placeholder="{{placeholderSurname}}" required>
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+      </div>
+      <div class="row justify-content-center row-contact">
+        <div class="col-md-5 form-group">
+          <label for="emailInput">Email <span class="red">*</span></label>
+          <input type="email" class="form-control" name="emailInput" placeholder="{{placeholderEmail}}" required>
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="col-md-5 form-group">
+          <label for="nationalityInput">{{nationality}}</label>
+          <input type="text" class="form-control" name="nationalityInput" placeholder="{{placeholderNationality}}">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+      </div>
+      <div class="row justify-content-center row-contact">
+        <div class="col-md-10 form-group">
+          <label for="subjectInput">{{subject}}</label>
+          <input type="text" class="form-control" name="subjectInput"  placeholder="{{placeholderMessage}}">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+      </div>
+      <div class="row justify-content-center row-contact">
+        <div class="col-md-10 form-group">
+          <label for="messageInput">{{message}}</label>
+          <textarea class="form-control" name="messageInput" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row justify-content-center row-contact">
+        <div id="banner" class="col-md-3 form-group">
+          <button type="submit" class="btn btn-primary">{{Send}}</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    {{!-- Navbar --}}
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item hvr-underline-from-center"><a class="nav-link js-scroll-trigger" href="/">{{homeLink}}</a></li>
+                    <li class="nav-item hvr-underline-from-center"><a class="nav-link js-scroll-trigger" href="innovations">Innovations</a></li>
+                    <li class="nav-item hvr-underline-from-center"><a class="nav-link js-scroll-trigger" href="arlequin">Arlequin</a></li>
+                    <li class="nav-item hvr-underline-from-center"><a class="nav-link js-scroll-trigger" href="contact">Contact</a></li>
+                </ul>
+        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="navbar-flags" id="FR"><a href="#"><img src="images/FR-flag-32.png" alt="flag"/></a></li>
+            <li class="navbar-flags" id="EN"><a href="#"><img src="images/GB-flag-32.png" alt="flag"/></a></li>
+        </ul>
+        </div>
+    </nav>
+    {{{body}}}
+    {{> scripts}}
+  </body>
+</html>

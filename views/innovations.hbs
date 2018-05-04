@@ -1,0 +1,243 @@
+{{!-- Section: Header --}}
+<!-- Start header -->
+<header>
+  <div class="container-fluid header-bg">
+  <img class="backgroundPark" src="images/headerPageinnov2.jpg" alt="imgheader" data-focus-left="0.50" data-focus-top="0.03" data-focus-right="0.73" data-focus-bottom="0.99" />
+  <img class="DWSlogo" src="images/Logo_DWS_2017_blanc.png" alt="logo" />
+    <div class="row header-content">
+      <div class="col-xs-12 col-md-6 moto">
+        <h1 class="headerText greenTitle">{{headerTextOne}}&nbsp;</h1>
+      </div>
+      <div class="col-xs-12 col-md-6 d-none d-md-block moto">
+        <h1 class="headerText black">{{headerTextTwo}}</h1>
+      </div>
+      <div class="col-xs-12 col-md-6 d-xs-block d-md-none moto">
+        <h1 class="headerText black">{{headerTextTwoResponsive}}</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End header -->
+<!-- Section: "Sailboats story" -->
+<hr>
+<section class="container-fluid innovations-container">
+  <div class="row">
+    <div class="storyTitle">
+      <h1>{{historyTitle}}</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-6 wow fadeInLeft storyText" data-wow-duration="2s">
+      <p>{{historyText}}</p>
+    </div>
+    <div class="col-xs-12 col-md-6 wow fadeInRight boatStory" data-wow-duration="2s">
+      <img src="images/MYCP1.jpg" alt="Central park boat house picture" />
+      <p class="legend">{{historyLegend}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: "RC Sailboats world" -->
+<section class="container-fluid innovations-container">
+  <div class="row">
+    <div class="storyTitle">
+      <h1>{{rcWorldTitle}}</h1>
+    </div>
+  </div>
+  <div class="row justify-content-start">
+    <div class="col-xs-12 col-md-6 storySubtitle">
+      <h2 class="underlineLeft">{{modelSubTitle}}</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-6 wow fadeInLeft storyText" data-wow-duration="2s">
+      <p>{{modelText}}</p>
+    </div>
+    <div class="col-xs-12 col-md-6 wow fadeInRight boatHouse" data-wow-duration="2s">
+      <img src="images/ModelYachtClub.jpg" alt="Boat house picture"  />
+      <p class="legend">{{modelLegend}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: "Carousel with RC sailboats competition" -->
+<section class="container-fluid innovations-container">
+  <div class="row justify-content-end">
+    <div class="col-xs-12 col-md-6 storySubtitle right">
+      <h2 class="underlineRight  rightAlign">{{competitionSubTitle}}</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-6 wow fadeInLeft boatHouse" data-wow-duration="2s">
+      <img src="images/DSC_0088.jpg" alt="RC sailboats picture"  />
+      <p class="legend">{{competitionLegend}}</p>
+    </div>
+    <div class="col-xs-12 col-md-6 wow fadeInRight storyText" data-wow-duration="2s">
+      <p>{{competitionText}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: "Carousel with RC sailboats" -->
+<section class="container-fluid innovations-container">
+  <div class="row justify-content-center">
+    <div id="carouselRCSailboats" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/carousel1.jpg" alt="First picture of RC sailboat" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/carousel2.jpg" alt="Second picture of RC sailboat" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/DSC_0981.JPG" alt="Third picture of RC sailboat" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselRCSailboats" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselRCSailboats" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Section: "DWS Inventions" -->
+<section class="container-fluid innovations-container">
+  <div class="row">
+    <div class="storyTitle">
+      <h1>{{innovationTitle}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 col-md-8 storyText">
+      <p id="mainInnovations">{{innovationText}}</p>
+    </div>
+  </div>
+  <!-- 1. Mobile app -->
+  <div class="row justify-content-center inventionsBlock">
+      <div class="col-xs-12 col-md-6 d-none d-md-block box-8 wow fadeInLeft inventionsImage1" data-wow-duration="3s">
+        <img src="images/mobileapp.jpg" alt="ISEN Mobile app" />
+      </div>
+      <div class="col-xs-12 col-md-6 box-4 design-col">
+          <div class="box-8-text padding-right-none wow fadeInRight" data-wow-duration="3s">
+              <h2 class="rightAlign underlineRight">{{pilotSubTitle}}</h2>
+              <p class="inventionsText">{{pilotText}}</p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-md-6 d-xs-block d-sm-block d-md-none box-8 wow fadeInLeft inventionsImage1" data-wow-duration="3s">
+        <img src="images/mobileapp.jpg" alt="ISEN Mobile app" />
+      </div>
+  </div>
+  <!-- 2. Community -->
+  <div class="row inventionsBlock">
+      <div class="col-md-6 box-4 design-col">
+        <div class="box-8-text padding-right-none wow fadeInLeft" data-wow-duration="3s">
+            <h2 class="leftAlign underlineLeft">{{communitySubTitle}}</h2>
+            <p class="inventionsText">{{communityText}}</p>
+        </div>
+    </div>
+    <div class="col-md-6 box-8 wow fadeInRight inventionsImage2" data-wow-duration="3s">
+      <img src="images/logoapplidws.png" alt="ISEN Mobile app" />
+    </div>
+  </div>
+  <!-- 3. Connected races -->
+  <div class="row inventionsBlock">
+      <div class="col-md-6 d-none d-md-block box-8 wow fadeInLeft inventionsImage3" data-wow-duration="3s">
+        <img src="images/Regatesconnectees.jpg" alt="" data-focus-left="0.28" data-focus-top="0.19" data-focus-right="0.68" data-focus-bottom="0.75" />
+      </div>
+      <div class="col-md-6 box-4 design-col">
+          <div class="box-8-text padding-right-none wow fadeInRight" data-wow-duration="3s">
+              <h2 class="rightAlign underlineRight">{{connectedSubTitle}}</h2>
+              <p class="inventionsText">{{connectedText}}</p>
+          </div>
+      </div>
+      <div class="col-md-6 d-xs-block d-sm-block d-md-none box-8 wow fadeInLeft inventionsImage3" data-wow-duration="3s">
+        <img src="images/Regatesconnectees.jpg" alt="Connected sailing competition" data-focus-left="0.28" data-focus-top="0.19" data-focus-right="0.68" data-focus-bottom="0.75" />
+      </div>
+  </div>
+  <!-- 4. VR sailing -->
+  <div class="row inventionsBlock">
+      <div class="col-md-6 box-4 design-col">
+        <div class="box-8-text padding-right-none wow fadeInLeft" data-wow-duration="3s">
+            <h2 class="leftAlign underlineLeft">{{realitySubTitle}}</h2>
+            <p class="inventionsText">{{realityText}}</p>
+        </div>
+    </div>
+    <div class="col-md-6 box-8 wow fadeInRight inventionsImage4" data-wow-duration="3s">
+      <img src="images/DSC_0890.JPG" alt="VR sailing picture" />
+    </div>
+  </div>
+</section>
+
+{{!-- Footer --}}
+<section id="contact">
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid footerContainer">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="../../images/Logo_DWS_2017_blanc.png"  class="footerlogo" alt="Dyna Wing sail logo">
+        </div>
+      </div>
+      <div class="row socialLinks">
+        <div class="col-md-4 d-none d-md-block social">
+          <a href="https://www.facebook.com/Dyna-wing-sail-215317049050180/" target="_blank"><img src="images/logo_fbWhite.png" alt="facebook logo" class="logoSocialNetwork"/></a>
+        </div>
+        <div class="col-md-4 center">
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <div id="mc_embed_signup">
+            <form action="https://dynawingsail.us18.list-manage.com/subscribe/post?u=0147d490cb356cfdd20932e50&amp;id=a0ea31bd89" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label class="NewsLabel" for="mce-EMAIL">Newsletter</label>
+                <br />
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="votre email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div class="row justify-content-center" style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_0147d490cb356cfdd20932e50_a0ea31bd89" tabindex="-1" value="">
+                </div>
+                <div class="row justify-content-center clear">
+                  <input type="submit" value="Subscribe" name="souscrire" id="mc-embedded-subscribe" class="button">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block social">
+          <a href="https://www.instagram.com/dynawingsail/?hl=fr" target="_blank"><img src="images/logo_instaWhite.png" alt="instagram logo" class="logoSocialNetwork"/></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6 d-xs-block d-md-none social">
+          <a href="https://www.facebook.com/Dyna-wing-sail-215317049050180/" target="_blank"><img src="images/logo_fbWhite.png" alt="facebook logo" class="logoSocialNetwork"/></a>
+        </div>
+        <div class="col-6 d-xs-block d-md-none social">
+          <a href="https://www.instagram.com/dynawingsail/?hl=fr" target="_blank"><img src="images/logo_instaWhite.png" alt="instagram logo" class="logoSocialNetwork"/></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12 loveWCS">
+          <a href="https://wildcodeschool.fr/lille/" class="made-with-love" target="_blank"> Made with <img src="images/heart.png" alt="heart logo"/> by Wild Code School Lille</a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6 legalLinks">
+          <a href="mentionslegales.html" target=_blank>Mentions légales</a>
+        </div>
+        <div class="col-6 legalLinks">
+          <a href="CGU.html" target=_blank>Conditions Générales d'Utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+</section>

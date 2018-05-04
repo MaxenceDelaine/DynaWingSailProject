@@ -1,0 +1,78 @@
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/bootstrap.js"></script>
+<script src="javascripts/scrollreveal.min.js"></script>
+<script src="javascripts/creative.min.js"></script>
+<script src="javascripts/responsify.js"></script>
+<script src="javascripts/contactform.js"></script>
+<script>
+    $(window).load(function() {
+        $('img').responsify();
+    });
+    $(window).resize(function() {
+        $('img').responsify();
+    });
+</script>
+<script src="javascripts/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+        offset: 200,
+        duration: 500,
+        easing: 'ease-in-sine',
+        delay: 100,
+    });
+</script>
+<script src="javascripts/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script src="{{script}}"></script>
+<script>
+$('#FR').on('click', function() {
+    $.ajax({
+        url: '/lang',
+        type: 'POST',
+        data: {lang: 'fr'}
+    })
+    location.reload();
+})
+$('#EN').on('click', function() {
+    $.ajax({
+        url: '/lang',
+        type: 'POST',
+        data: {lang: 'en'}
+    })
+    location.reload();
+})
+
+</script>
+<script>
+    function compileLayers() {
+        let imgUrlObj = {
+            coque : $('#coque').attr('src'),
+            bulbe : $('#bulbe').attr('src'),
+            nez : $('#nez').attr('src'),
+            backPont : $('#back-pont').attr('src'),
+            roofTape : $('#roof-tape').attr('src'),
+            pont : $('#pont').attr('src')
+        }
+        $.ajax({
+            url: '/compile',
+            type: 'POST',
+            data: imgUrlObj
+        }).done (function() {
+            setTimeout(() => {
+                window.open('/download')
+                $('#dwnld-status').text('Votre image est prête!')
+                $('#loading-gif').addClass('invisible')
+                }, 2000)
+        })
+    }
+
+    $('#save-img').on('click', function() {
+        $('#save-img').addClass('hvr-pop').removeClass('hve-pop')
+        $('#dwnld-status').removeClass()
+        $('#loading-gif').removeClass()
+        compileLayers()
+    })
+</script>

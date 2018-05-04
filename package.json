@@ -1,0 +1,24 @@
+{
+  "name": "dyna-hbs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.11",
+    "hbs": "^4.0.1",
+    "http-errors": "~1.6.2",
+    "jimp": "^0.2.28",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3",
+    "request": "^2.85.0"
+  }
+}

@@ -1,0 +1,1061 @@
+/* GENERAL */
+
+/* 1- POLICES DWS */
+
+@font-face {
+    font-family: Blacksword;
+    src: url("../fonts/Blacksword.ttf");
+}
+
+@font-face {
+  font-family: Euro;
+  src: url("../../fonts/Eurosti.ttf");
+}
+
+/* END OF POLICES DWS */
+
+body {
+  font-family: Euro, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0% 5% 0 5%;
+}
+
+/********************
+        GENERAL CSS
+*********************/
+
+hr {
+  width: 50%;
+}
+
+/**********************
+       START DESIGN AND INNOVATIONS
+*********************/
+
+.design-container {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box-8, .box-4 {
+  padding: 0;
+}
+
+.box-8 img {
+position: relative;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.box-4 img {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+#table-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.box-8-text {
+  background-color: rgb(255, 255, 255,0.4);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 5% 15% 2% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  /* border: black 2px solid; */
+  padding-top: 0;
+}
+
+.padding-right-none {
+  padding-right: 0;
+}
+
+.padding-left-none {
+  padding-left: 0;
+}
+
+#innov-h3 {
+  text-align: right;
+}
+
+.design-container h2 {
+  border-bottom: solid 1px rgb(23, 225, 29);
+  margin-bottom: 5vh;
+  color: grey;
+  font-size: 3.5vh;
+}
+
+
+/**********************
+       END DESIGN AND INNOVATIONS
+                    *********************/
+
+
+hr {
+  max-width: 100px;
+  border-width: 2px;
+  border-color: rgb(23, 225, 29);
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+a {
+  color: rgb(23, 225, 29);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: rgb(23, 225, 29);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Euro, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+.bg-white {
+  background-color: white !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: Euro, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(23, 225, 29);
+  font-family: Euro, 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: rgb(23, 225, 29);
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: rgb(23, 225, 29);
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: rgb(23, 225, 29) !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+.navbar-nav.ml-auto {
+  padding-right: 5%;
+}
+
+.navbar-nav.m-auto {
+  padding-left: 5%;
+}
+
+#navbarResponsive {
+  margin-left: 70px;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: rgb(23, 225, 29);
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: rgb(23, 225, 29);
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: rgb(23, 225, 29);
+  }
+}
+
+/* image header + logo + text */
+
+.backgroundPark {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.header-content{
+  position: absolute;
+  top: 55%;
+  width:88%;
+}
+
+.DWSlogo {
+  position:absolute;
+  top: 31%;
+  left:35%;
+  width: 30%;
+}
+
+.headerText{
+  font-family: "Euro";
+  font-weight: bold;
+  font-size: 1.8vw;
+}
+
+.greenTitle {
+  text-align: right;
+  font-family: "Euro";
+  font-weight: bold;
+  font-size: 4vh;
+  color: rgb(113, 226, 68);
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+
+.black {
+  text-align:left;
+  font-family: "Euro";
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px;
+}
+
+/* Very small devices (for poor people) */
+@media (min-width: 320px) {
+  .headerText {
+    font-size: 3vw;
+  }
+  .DWSlogo {
+    top: 41%;
+    left:25%;
+    width: 50%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .headerText {
+    font-size: 3vw;
+  }
+  .DWSlogo {
+    top: 41%;
+    left:30%;
+    width: 40%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .headerText {
+    font-size: 3vw;
+  }
+  .DWSlogo {
+    top: 31%;
+    left:35%;
+    width: 30%;
+  }
+  .greenText {
+    text-align:right;
+  }
+  .black {
+    text-align:left;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .headerText {
+    font-size: 2.4vw;
+  }
+  .green {
+    text-align:right;
+  }
+  .black {
+    text-align:left;
+  }
+  .DWSlogo {
+    top: 38%;
+    left:35%;
+    width: 30%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .headerText {
+    font-size: 1.9vw;
+  }
+  .green {
+    text-align:right;
+  }
+  .black {
+    text-align:left;
+  }
+  .DWSlogo {
+    top: 31%;
+    left:35%;
+    width: 30%;
+  }
+}
+
+.moto {
+  padding:0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerText {
+    text-align:center;
+  }
+}
+
+/* end header + logo + text */
+
+.service-box {
+  max-width: 400px;
+}
+
+.text-primary {
+  color: rgb(23, 225, 29) !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: Euro, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: rgb(23, 225, 29);
+  border-color: rgb(23, 225, 29);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+
+/* VIDEO SECTION */
+
+#videoSection {
+  padding:0; /*Video fits all the section, no white bars below and after the video*/
+}
+
+#dwsVideo {
+    right: 0;
+    bottom: 0;
+    max-width: 100%; /*For video responsivity*/
+    height: auto; /*For video responsivity*/
+}
+
+/* PARTNERS SECTIONS */
+
+#partnersSection {
+  background-color: white;
+}
+
+.partnersLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 12vw;
+  height: auto;
+}
+
+.ourPartners {
+  font-family: Euro;
+  color: black;
+  font-size: 3vw;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 20vw !important;
+  }
+  .ourPartners {
+    font-size: 8vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 15vw !important;
+  }
+  .ourPartners {
+    font-size: 5vw !important;
+  }
+}
+
+/* Arlequin Section */
+#arlequin {
+  background-image: url("../../images/Logo_Arlequin.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  padding-top:26%;
+  padding-bottom:22%;
+}
+
+
+/* FOOTER */
+
+.footerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  width: 195px;
+  height: 80px;
+}
+
+#contact {
+background-color: #3d3d3d;
+padding:0 !important;
+}
+.footerContainer {
+padding-bottom: 1%;
+}
+/* FOOTER NESWLETTER */
+
+#mc_embed_signup {
+background: #3d3d3d;
+clear:left;
+font-family: 'Euro';
+color: white;
+width: 100%;
+}
+
+/* Wild link */
+.made-with-love {
+  text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+}
+
+@media (max-width:576px){
+  .made-with-love {
+    margin:2%;
+    font-size:4vw;
+  }
+}
+
+.social {
+  margin: auto;
+}
+
+.socialLinks {
+  text-align: center;
+
+}
+.socialLinks a {
+  color: white;
+  font-size: 3vh;
+}
+
+.loveWCS {
+  margin-top: 1vw;
+}
+
+.legalLinks {
+  text-align: center;
+  font-size:0.8em;
+  margin-top:0.5%;
+}
+
+.legalLinks a {
+  color: white;
+}
+
+.logoSocialNetwork{
+  width: 20%;
+  height: auto;
+}
+
+
+#mc_embed_signup .email {
+  margin: 0 !important;
+  text-align: center;
+  position:relative;
+  left:21%;
+}
+
+#mc_embed_signup .button {
+ text-align: center;
+ position:relative;
+ left:32%;
+}
+
+.NewsLabel {
+  margin-top: 4%;
+  margin-bottom: -6%;
+  text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+.social {
+  text-align: center;
+}
+}
+
+#mc-embedded-subscribe-form {
+  padding: 0 !important;
+}
+
+#mc_embed_signup_scroll {
+  margin-bottom:-5%;
+}
+
+/* END FOOTER */
+
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(23, 225, 29);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+/**********************
+       START PAGE 2 - INNOVATIONS
+                    *********************/
+
+/* DWS graphical chart */
+.lightgrey {
+  color: #E4E4E4;
+}
+
+.grey {
+  color:#B2B2B2;
+}
+
+.green {
+  color:#71E203;
+}
+
+.red {
+  color: #E12322;
+}
+
+/* START of parameters of the TEXT */
+
+.legend {
+  font-size: 1.2em;
+  text-align:center;
+}
+
+.storyText {
+  text-align:justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom: auto;
+  width:100%;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.rightAlign {
+  text-align:right;
+}
+
+#mainInnovations {
+  font-weight:bold;
+  font-size: 1.4em;
+  color: #B2B2B2;
+  margin-top: 2%;
+  margin-bottom:2%;
+}
+
+.inventionsText {
+  font-size: 1.2em;
+  text-align:justify;
+}
+/* END of parameters of the TEXT */
+
+/* START of parameters of the IMAGES */
+/*1.Sailboats story image*/
+.boatStory img{
+  width:100%;
+  height:auto;
+  margin-top:2%;
+}
+/*2.RC sailboats world image*/
+.boatHouse img{
+  width:100%;
+  height:auto;
+  margin-top:2%;
+}
+/*3.RC sailboats competition image*/
+.rcCompetition img{
+  width:100%;
+  height:auto;
+  margin-top:2%;
+}
+/*4.Inventions section 4 images*/
+.inventionsImage1 img {
+  position: relative;
+  width: 82%;
+  height: auto;
+  left:9%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.inventionsImage2 img {
+  position: relative;
+  width: 40%;
+  height:auto;
+  left:30%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.inventionsImage3 img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left:10%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+}
+.inventionsImage4 img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left:10%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+}
+/* END of parameters of the IMAGES */
+
+/* START of parameters of the TITLES or SUBTITLES DIVS */
+.storyTitle h1{
+  border-bottom: solid 3px #B2B2B2;
+  margin-bottom:2%;
+}
+
+.storyTitle {
+  text-align:center;
+  width:100%;
+  /* padding-bottom:2%; */
+}
+
+.storySubtitle {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+/* END of parameters of the TITLES or SUBTITLES DIVS */
+
+/* START of parameters of the CONTAINERS */
+.innovations-container {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.innovations-container .underlineRight {
+  border-bottom: solid 2px rgb(23, 225, 29);
+}
+
+.innovations-container .underlineLeft {
+  border-bottom: solid 2px rgb(255, 35, 34);
+}
+
+.innovations-container h2 {
+  border-bottom: solid 2px rgb(23, 225, 29);
+  margin-bottom: 5vh;
+}
+
+.inventionsBlock {
+  margin-bottom: 10%;/*Pour gérer l'espacement vertical entre les 4 inventions */
+}
+
+/* END of parameters of the CONTAINERS */
+
+/* START of MEDIA QUERIES */
+@media (max-width:480px) {
+  .boatStory img {
+    width:100%;
+    margin-top:4%;
+  }
+  .boatHouse img{
+    width:100%;
+    margin-top:4%;
+  }
+  .rcCompetition img{
+    width:100%;
+    margin-top:4%;
+  }
+  .storySubtitle {
+    margin-top: 5%;
+  }
+  .inventionsBlock {
+    margin-bottom: 25%;/*Pour gérer l'espacement vertical entre les 4 inventions */
+  }
+  #mainInnovations {
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size: 0.8em;
+  }
+  .storyTitle h1{
+    font-size:2.5em;
+  }
+  .storyTitle {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .inventionsImage2 img {
+    width: 60%;
+    height: auto;
+    left:20%;
+  }
+}
+
+@media (max-width:767px) {
+  .boatStory img {
+    width:100%;
+    margin-top:4%;
+  }
+  .boatHouse img{
+    width:100%;
+    margin-top:4%;
+  }
+  .rcCompetition img{
+    width:100%;
+    margin-top:4%;
+  }
+  .storyText {
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size: 1em;
+    padding-left:2%;
+    padding-right:2%;
+  }
+  .storySubtitle {
+    margin-top: 5%;
+  }
+  .inventionsBlock {
+    margin-bottom: 20%;/*Pour gérer l'espacement vertical entre les 4 inventions */
+  }
+  #mainInnovations {
+    margin-bottom:10%;
+    font-size: 1.2em;
+  }
+  .innovations-container h2 {
+    margin-bottom:2%;
+  }
+  .box-8-text {
+    padding:5% 5% 5% 5%;
+  }
+  .box-8-text h2{
+    text-align:center;
+  }
+}
+
+@media (max-width:992px) {
+  .inventionsImage1 img {
+    top:25%;
+  }
+  .inventionsImage2 img {
+    width: 50%;
+    height: auto;
+    left:25%;
+    top:25%;
+  }
+  .inventionsImage3 img {
+    top:30%;
+  }
+  .inventionsImage4 img {
+    top:30%;
+  }
+  .storyText {
+    font-size: 1.3em;
+    padding-left:4%;
+    padding-right:4%;
+  }
+}
+
+@media (max-width:1200px) {
+  .inventionsImage1 img {
+    top:10%;
+  }
+  .inventionsImage2 img {
+    width: 50%;
+    height: auto;
+    left:25%;
+    top:10%;
+  }
+  .inventionsImage3 img {
+    top:15%;
+  }
+  .inventionsImage4 img {
+    top:15%;
+  }
+  .storyText {
+    font-size: 1.4em;
+    padding-left:4%;
+    padding-right:4%;
+  }
+}
+
+@media (min-width:1201px) {
+  .storyText {
+    font-size: 1.6em;
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+
+/* END of MEDIA QUERIES */
+
+/* START of parameters of the CAROUSEL  */
+.carousel {
+  padding:0;
+  height:80%;
+  width:80%;
+}
+
+@media (max-width:767px) {
+  .carousel {
+    height:100%;
+    width:100%;
+  }
+}
+
+.carousel-indicators .active{
+  background-color: #71E203;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#E12322' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#71E203' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 20%;
+  height: 20%;
+}
+/* END of parameters of the CAROUSEL  */
+
+/**********************
+       END PAGE 2 - INNOVATIONS
+                    *********************/
+
+
+
+
+/********** OLD STUFF **********/
+
+/* VIDEO SECTION */
+/*
+#videoSection {
+  padding:0;
+}
+
+#dwsVideo {
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+}
+*/
+/* PARTNERS SECTIONS */
+/*
+#partnersSection {
+  background-color: white;
+}
+
+.partnersLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 12vw;
+  height: auto;
+}
+
+.ourPartners {
+  font-family: Euro;
+  color: black;
+  font-size: 3vw;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 20vw !important;
+  }
+  .ourPartners {
+    font-size: 8vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 15vw !important;
+  }
+  .ourPartners {
+    font-size: 5vw !important;
+  }
+}
+*/
