@@ -1,7 +1,7 @@
 <header>
-    <div class="header-bg">
-        <img src="images/arlequin.jpg" alt="imgheader" data-focus-left="0.50" data-focus-top="0.03" data-focus-right="0.73" data-focus-bottom="0.99" />
-    </div>
+  <div class="header-bg">
+    <img src="images/arlequin.jpg" alt="imgheader" data-focus-left="0.50" data-focus-top="0.03" data-focus-right="0.73" data-focus-bottom="0.99" />
+  </div>
 </header>
 <div class="arlequin-header-title ">
   <div class="arlequin-banner">
@@ -99,7 +99,7 @@
           <h5>Spécification #3</h5>
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="video/sailboat2.mp4"></iframe>
+            <iframe class="embed-responsive-item" src="video/sailboat.mp4"></iframe>
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
@@ -132,115 +132,112 @@
 </section>
 <section class="grey-bg" id="config">
   <h1>{{personalize}}</h1>
-    {{!-- Buttone choices --}}
-    <div class="container-fluid container-choice pdg-2">
-      {{!-- <h3>Options:</h3>             --}}
-      <div class="row">
-          <div class="col-md-12 centering-options">
-              <!-- black roof tape -->
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="product_option5" value="option1">
-                  <label class="form-check-label" for="product_option5">{{roof}}</label>
-              </div>
-              <!-- black pont -->
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="product_option6" value="option2">
-                  <label class="form-check-label" for="product_option6">{{afterDeck}}</label>
-              </div>
-          </div>
+  {{!-- Buttone choices --}}
+  <div class="container-fluid container-choice pdg-2">
+    {{!-- <h3>Options:</h3>             --}}
+    <div class="row">
+      <div class="col-md-12 centering-options">
+          <!-- black roof tape -->
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="product_option5" value="option1">
+          <label class="form-check-label" for="product_option5">{{roof}}</label>
+        </div>
+        <!-- black pont -->
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="product_option6" value="option2">
+          <label class="form-check-label" for="product_option6">{{afterDeck}}</label>
+        </div>
       </div>
     </div>
-    <!--
-      CANVAS
-    -->
-    <div class="canvas" id="prod">
-      <!-- base image-->
-      <div class="base-img-div">
-          <img id="base" src="images/calques/base.png" alt="base-image"/>
-      </div>
-      <!-- Calques layer -->
-      <div class="layers-img-div">
-          <img id="bulbe" style="z-index:1;" src="#" alt="bulbe-image"/>
-          <!-- coque layer -->
-          <img id="coque" style="z-index:1;" src="#" alt="coque-image"/>
-          <!-- nez layer -->
-          <img id="nez" style="z-index:1;" src="#" alt="nez-image"/>
-          <!-- pont layer -->
-          <img id="pont" style="z-index:3;" src="#" alt="pont-image"/>
+  </div>
+  <!--CANVAS-->
+  <div class="canvas" id="prod">
+    <!-- base image-->
+    <div class="base-img-div">
+      <img id="base" src="images/calques/base.png" alt="base-image"/>
+    </div>
+    <!-- Calques layer -->
+    <div class="layers-img-div">
+        <img id="bulbe" style="z-index:1;" src="#" alt="bulbe-image"/>
+        <!-- coque layer -->
+        <img id="coque" style="z-index:1;" src="#" alt="coque-image"/>
+        <!-- nez layer -->
+        <img id="nez" style="z-index:1;" src="#" alt="nez-image"/>
+        <!-- pont layer -->
+        <img id="pont" style="z-index:3;" src="#" alt="pont-image"/>
 
-          <img id="roof-tape" style="z-index:2;" src="#" alt="roof-tape-image"/>
+        <img id="roof-tape" style="z-index:2;" src="#" alt="roof-tape-image"/>
 
-          <img id="back-pont" style="z-index:2;" src="#" alt="back-pont-image"/>
-      </div>
-      {{!-- PALETTES COULEUR --}}
-      <div id="palette-coque" class="palette-div invisible" style="z-index: 3;">
-        <div class="container-fluid config-shadow">
-          <div class="row hgt-100">
-            <div class="col-2">
-              <div class="vertical-center pdg-2 hgt-100 ">
-                <div class="color-sample red hvr-grow" value="1"></div>
-                <div class="color-sample blue hvr-grow" value="2"></div>
-                <div class="color-sample light-blue hvr-grow" value="3"></div>
-                <div class="color-sample orange hvr-grow" value="4"></div>
-                <div class="color-sample purple hvr-grow" value="5"></div>
-                <div class="color-sample green hvr-grow" value="6"></div>
-                <div class="color-sample yellow hvr-grow" value="7"></div>
-                <div class="color-sample black hvr-grow" value="8"></div>
-                <div class="color-sample white hvr-grow" value="0"></div>
-              </div>
+        <img id="back-pont" style="z-index:2;" src="#" alt="back-pont-image"/>
+    </div>
+    {{!-- PALETTES COULEUR --}}
+    <div id="palette-coque" class="palette-div invisible" style="z-index: 3;">
+      <div class="container-fluid config-shadow">
+        <div class="row hgt-100">
+          <div class="col-2">
+            <div class="vertical-center pdg-2 hgt-100 ">
+              <div class="color-sample red hvr-grow" value="1"></div>
+              <div class="color-sample blue hvr-grow" value="2"></div>
+              <div class="color-sample light-blue hvr-grow" value="3"></div>
+              <div class="color-sample orange hvr-grow" value="4"></div>
+              <div class="color-sample purple hvr-grow" value="5"></div>
+              <div class="color-sample green hvr-grow" value="6"></div>
+              <div class="color-sample yellow hvr-grow" value="7"></div>
+              <div class="color-sample black hvr-grow" value="8"></div>
+              <div class="color-sample white hvr-grow" value="0"></div>
             </div>
-            <div class="col-10">
-            </div>
+          </div>
+          <div class="col-10">
           </div>
         </div>
       </div>
-      <div id="palette-bulbe" class="palette-div" style="z-index: 3;">
-        <div class="container-fluid config-shadow">
-          <div class="row hgt-100">
-            <div class="col-2 palette">
-              <div class="vertical-center pdg-2 hgt-100">
-                <div class="color-sample  red hvr-grow" value="1"></div>
-                <div class="color-sample blue hvr-grow" value="2"></div>
-                <div class="color-sample light-blue hvr-grow" value="3"></div>
-                <div class="color-sample orange hvr-grow" value="4"></div>
-                <div class="color-sample purple hvr-grow" value="5"></div>
-                <div class="color-sample green hvr-grow" value="6"></div>
-                <div class="color-sample yellow hvr-grow" value="7"></div>
-                <div class="color-sample black hvr-grow" value="8"></div>
-                <div class="color-sample white hvr-grow" value="0"></div>
-              </div>
+    </div>
+    <div id="palette-bulbe" class="palette-div" style="z-index: 3;">
+      <div class="container-fluid config-shadow">
+        <div class="row hgt-100">
+          <div class="col-2 palette">
+            <div class="vertical-center pdg-2 hgt-100">
+              <div class="color-sample  red hvr-grow" value="1"></div>
+              <div class="color-sample blue hvr-grow" value="2"></div>
+              <div class="color-sample light-blue hvr-grow" value="3"></div>
+              <div class="color-sample orange hvr-grow" value="4"></div>
+              <div class="color-sample purple hvr-grow" value="5"></div>
+              <div class="color-sample green hvr-grow" value="6"></div>
+              <div class="color-sample yellow hvr-grow" value="7"></div>
+              <div class="color-sample black hvr-grow" value="8"></div>
+              <div class="color-sample white hvr-grow" value="0"></div>
             </div>
-            <div class="col-10">
-            </div>
+          </div>
+          <div class="col-10">
           </div>
         </div>
       </div>
-      <div id="palette-nez" class="palette-div invisible" style="z-index: 3;">
-        <div class="container-fluid config-shadow">
-          <div class="row hgt-100">
-            <div class="col-2 palette">
-              <div class="vertical-center pdg-2 hgt-100">
-                <div class="color-sample yellow hvr-grow" value="7"></div>
-                <div class="color-sample black hvr-grow" value="8"></div>
-                <div class="color-sample white hvr-grow" value="0"></div>
-              </div>
+    </div>
+    <div id="palette-nez" class="palette-div invisible" style="z-index: 3;">
+      <div class="container-fluid config-shadow">
+        <div class="row hgt-100">
+          <div class="col-2 palette">
+            <div class="vertical-center pdg-2 hgt-100">
+              <div class="color-sample yellow hvr-grow" value="7"></div>
+              <div class="color-sample black hvr-grow" value="8"></div>
+              <div class="color-sample white hvr-grow" value="0"></div>
             </div>
-            <div class="col-10">
-            </div>
+          </div>
+          <div class="col-10">
           </div>
         </div>
       </div>
-      <div id="palette-pont" class="palette-div invisible" style="z-index: 3;">
-        <div class="container-fluid config-shadow">
-          <div class="row hgt-100">
-            <div class="col-2 palette">
-              <div class="vertical-center pdg-2 hgt-100">
-                <div class="color-sample black hvr-grow" value="8"></div>
-                <div class="color-sample white hvr-grow" value="0"></div>
-              </div>
+    </div>
+    <div id="palette-pont" class="palette-div invisible" style="z-index: 3;">
+      <div class="container-fluid config-shadow">
+        <div class="row hgt-100">
+          <div class="col-2 palette">
+            <div class="vertical-center pdg-2 hgt-100">
+              <div class="color-sample black hvr-grow" value="8"></div>
+              <div class="color-sample white hvr-grow" value="0"></div>
             </div>
-            <div class="col-10">
-            </div>
+          </div>
+          <div class="col-10">
           </div>
         </div>
       </div>
@@ -306,7 +303,7 @@
     </div>
   </div>
 </section>
-<section >
+<section>
   <h1>{{reserve}}</h1>
   {{!-- Boat selection detail --}}
   <div class="container-fluid">
