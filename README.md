@@ -5,6 +5,7 @@ Our IoT solutions combine sailing, drone technology, augmented reality and elect
 ## Installation
 
 `npm install`
+
 `If you want to test the contact form, add the missing informations about email and password in /* POST contact route */ of routes/index.js`
 
 ## Usage
