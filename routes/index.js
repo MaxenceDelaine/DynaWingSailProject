@@ -33,6 +33,7 @@ router.get('/contact', function (req, res, next) {
   }
 })
 
+/* GET innovations page. */
 router.get('/innovations', function (req, res, next) {
   if (lang === 'fr') {
     res.render('innovations', innovations.innovations)
@@ -41,6 +42,7 @@ router.get('/innovations', function (req, res, next) {
   }
 })
 
+/* GET arlequin page. */
 router.get('/arlequin', function (req, res, next) {
   if (lang === 'fr') {
     res.render('arlequin', arlequin.arlequin)
@@ -67,6 +69,7 @@ router.get('/cgu', function (req, res, next) {
   }
 })
 
+/* POST language */
 router.post('/lang', (req, res) => {
   // on stocke la langue dans la session
   lang = req.body.lang
@@ -78,14 +81,14 @@ router.post('/contact', function (req, res, next) {
   let smtpTransport = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'suricatecrew@gmail.com', // Entrez ici l'adresse email de contact
-      pass: 'HakunaM@t@t@' // Et le mot de passe de l'adresse email en question
+      user: 'XXXXXXX@gmail.com', // Entrez ici l'adresse email de contact
+      pass: 'XXXXXXXXXX' // Et le mot de passe de l'adresse email en question
     }
   })
 
   smtpTransport.sendMail({
     from: `${req.body.firstNameInput} ${req.body.lastNameInput} <${req.body.emailInput}>`,
-    to: 'maxence.delaine@gmail.com', // Entrez ici l'adresse email de contact
+    to: 'XXXXXXX@gmail.com', // Entrez ici l'adresse email de contact
     subject: 'Contact DWS',
     text:
     `Bonjour Paul-Henri Decamp,
@@ -159,8 +162,9 @@ router.post('/compile', function (req, res) {
   }).catch(function (err) {
     console.log('I got zero problems big fella')
   })
-});
+})
 
+/* GET Download (picture of the personnalized sailboat) */
 router.get('/download', function (req, res, next) {
   let IMGfile = __dirname + '/public/images/new.png'
   let fileName = 'new.png'
