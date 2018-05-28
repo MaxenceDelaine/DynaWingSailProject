@@ -14,7 +14,7 @@ Our IoT solutions combine sailing, drone technology, augmented reality and elect
 
 ## Additionnal NPM Dependencies (DEV)
 - body-parser: 1.18.2,
-- debug": 2.6.9,
+- debug: 2.6.9,
 - fs: 0.0.1-security,
 - jimp: 0.2.28,
 - nodemailer: 4.6.4
